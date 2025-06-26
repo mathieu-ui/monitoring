@@ -96,11 +96,11 @@ Nous avons chosi d'utiliser checkmk pour la collecte des métriques et la survei
 
 - Monitoring de Kresus
 
-![image](image%20copy%204.png)
+![image](image%20copy%205.png)
 
 - Monitoring de PostgreSQL
-  
-![image](image%20copy%205.png)
+ 
+![image](image%20copy%204.png)
 
 - Pour les monitoring des machines ou sont les container, en plus de nos sondes, nous avons mis en place un monitoring de l'état des containers avec checkmk.
 
