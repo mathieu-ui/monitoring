@@ -72,7 +72,7 @@ Notre solution s'articule autour d'une architecture distribuée avec les composa
    - PostgreSQL
    - PostgreSQL
    - Kresus
-   - Git
+   - Git (GitLab)
 
 ![image](image%20copy.png)
 
