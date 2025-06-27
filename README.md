@@ -16,6 +16,7 @@
   - [Architecture Proposée](#architecture-proposée)
     - [Vue d'Ensemble](#vue-densemble)
       - [Datacentres Monitorés](#datacentres-monitorés)
+    - [Le cluster Proxmox](#le-cluster-proxmox)
     - [Composants du Système de Monitoring](#composants-du-système-de-monitoring)
     - [Ce que nous avons mis en place](#ce-que-nous-avons-mis-en-place)
     - [Ce que nous n'avons pas pu mettre en place](#ce-que-nous-navons-pas-pu-mettre-en-place)
@@ -74,7 +75,11 @@ Notre solution s'articule autour d'une architecture distribuée avec les composa
    - Kresus
    - Git (GitLab)
 
+### Le cluster Proxmox
+
 ![image](image%20copy.png)
+
+![alt text](image-2.png)
 
 > Apres votre accord le datacenter2 a disparu dans le neant distordu. (C'est strasbourg, il a brûlé)
 
@@ -85,6 +90,12 @@ Nous avons chosi d'utiliser checkmk pour la collecte des métriques et la survei
 ![image](image%20copy%207.png)
 
 ### Ce que nous avons mis en place
+
+- Service WordPress avec sa base de données MariaDB
+
+Ces services tourne dans des containers LXC sur Proxmox. Nous utilisons un docker-compose qui lie les service wordpress et mariadb. Nous avons mis en place un monitoring de ces services avec checkmk.
+
+![alt text](image-3.png)
 
 - Monitoring des accès aux bases de données MariaDB
 
@@ -106,6 +117,27 @@ Nous avons chosi d'utiliser checkmk pour la collecte des métriques et la survei
 
 ![image](image%20copy%206.png)
 
+- Service de partage de fichiers avec Qbittorrent et Samba
+
+![alt text](image-4.png)
+
+- Monitoring du partage de fichiers
+
+![alt text](image-5.png)
+
+- Monitoring du service Plex
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
+
+- Service de backup Proxmox
+
+![alt text](image-9.png)
+
+- Monitoring du service de backup Proxmox
+
+![alt text](image-8.png)
 
 ### Ce que nous n'avons pas pu mettre en place
 
