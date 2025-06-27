@@ -148,3 +148,5 @@ Ces services tourne dans des containers LXC sur Proxmox. Nous utilisons un docke
 - Regle de mascage de checkmk discovery pour ne pas afficher les services inutiles, Systemd Service Summary et le NTP Time
 
 ![alt text](image-1.png)
+
+> github.com/mathieu-ui/monitoring
