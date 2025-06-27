@@ -1,7 +1,9 @@
 # Rapport de Projet de Groupe - Infrastructure de Monitoring
 
 **Date :** 25 juin 2025  
+
 **Équipe :** Groupe de 4 personnes  :  Joran Ripiego, Leo Goriot, Julien Alleaume, Mathieu Puig
+
 **Sujet :** Mise en place d'une infrastructure de monitoring multi-datacentres  
 
 ---
@@ -21,6 +23,7 @@
     - [Ce que nous avons mis en place](#ce-que-nous-avons-mis-en-place)
     - [Ce que nous n'avons pas pu mettre en place](#ce-que-nous-navons-pas-pu-mettre-en-place)
     - [Regle de masquage pour checkmk](#regle-de-masquage-pour-checkmk)
+    - [Lien vers le dépôt GitHub](#lien-vers-le-dépôt-github)
 
 ---
 
@@ -148,5 +151,7 @@ Ces services tourne dans des containers LXC sur Proxmox. Nous utilisons un docke
 - Regle de mascage de checkmk discovery pour ne pas afficher les services inutiles, Systemd Service Summary et le NTP Time
 
 ![alt text](image-1.png)
+
+### Lien vers le dépôt GitHub
 
 > github.com/mathieu-ui/monitoring
